@@ -21,13 +21,13 @@ export default defineConfigWithVueTs(
 
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
-  
+
   {
     ...pluginVitest.configs.recommended,
     // files: ['src/**/__tests__/*'],
     files: ['src/tests/*'],
   },
-  
+
   {
     ...pluginPlaywright.configs['flat/recommended'],
     files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'],
@@ -36,8 +36,8 @@ export default defineConfigWithVueTs(
   skipFormatting,
   {
     rules: {
-      "@typescript-eslint/no-unused-vars": "off",
-      "vue/multi-word-component-names" : "off",
-    }
-  }
+      '@typescript-eslint/no-unused-vars': 'off',
+      'vue/multi-word-component-names': 'off',
+    },
+  },
 )
