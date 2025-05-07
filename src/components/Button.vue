@@ -13,10 +13,10 @@ const props = withDefaults(
   },
 )
 const emits = defineEmits<{
-  (event: 'click', payload: MouseEvent): void
+  (event: 'click', payload: Event): void
 }>()
 
-const onClick = (event: MouseEvent) => {
+const onClick = (event: Event) => {
   console.log('onClick ::::: ', event)
   emits('click', event)
 }

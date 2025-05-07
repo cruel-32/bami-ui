@@ -18,12 +18,14 @@ const emits = defineEmits<{
 
 const onChange = (event: Event) => {
   console.log('onChange ::::: ', event)
-  emits('change', event.target?.value || '')
+  const target = event.currentTarget as HTMLInputElement
+  emits('change', target.value || '')
 }
 
 const onInput = (event: Event) => {
   console.log('onInput ::::: ', event)
-  emits('update:value', event.target?.value || '')
+  const target = event.currentTarget as HTMLInputElement
+  emits('update:value', target.value || '')
 }
 </script>
 
