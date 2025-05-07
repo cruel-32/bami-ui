@@ -4,10 +4,10 @@ import Input from '@/components/Input.vue'
 import Button from '@/components/Button.vue'
 
 const parentValue = ref('테스트')
-const onChange = (value) => {
+const onChange = (value: string) => {
   console.log('parent value ::::: ', value)
 }
-const onClick = (event) => {
+const onClick = (event: Event) => {
   console.log('parent onClick ::::: ', event)
 }
 </script>
