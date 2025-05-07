@@ -5,9 +5,10 @@ defineOptions({
 })
 const props = withDefaults(
   defineProps<{
-    type: 'submit'
+    type?: 'submit' | 'reset' | 'button'
   }>(),
   {
+    type: 'submit', // 기본값
     // messages: () => [], // array는 함수 형태
   },
 )
