@@ -7,7 +7,7 @@ const parentValue = ref('테스트')
 const onChange = (value: string) => {
   console.log('parent value ::::: ', value)
 }
-const onClick = (event: Event) => {
+const onClick = (event: MouseEvent) => {
   console.log('parent onClick ::::: ', event)
 }
 </script>
